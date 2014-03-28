@@ -1,0 +1,92 @@
+@CHARSET "UTF-8";
+.breadCrumb{height:35px;}
+
+select,textarea,input[type="text"],input[type="password"],input[type="datetime"],input[type="datetime-local"],input[type="date"],input[type="month"],input[type="time"],input[type="week"],input[type="number"],input[type="email"],input[type="url"],input[type="search"],input[type="tel"],input[type="color"],.uneditable-input {
+	height: 30px;
+}
+
+body {
+	line-height: 18px;
+	font-family:Arial,Helvetica,sans-serif,"宋体"
+}
+
+.x-body{
+	font-family:Arial,Helvetica,sans-serif,"宋体"
+}
+
+.x-grid-cell-inner{
+	height: 35px;
+}
+
+.x-column-header{
+	height: 35px;
+}
+
+.x-btn-default-small .x-btn-inner, .x-btn-default-medium .x-btn-inner, .x-btn-default-large .x-btn-inner, .x-btn-default-toolbar-small .x-btn-inner, .x-btn-default-toolbar-medium .x-btn-inner, .x-btn-default-toolbar-large .x-btn-inner, .x-menu-item-text, .x-html-editor-tb .x-font-select, .x-panel-header-default, .x-panel-header-text-default, .x-panel-header-default-framed, .x-tip-header, .x-tip-body, .x-form-invalid-tip-body, .x-tip-header-text, .x-progress-text, .x-toolbar, .x-toolbar .x-form-item-label, .x-toolbar .x-toolbar-text, .x-window-header-text-default, .x-tab-bar, .x-tab button, .x-grid-rowbody, .x-grid-row .x-grid-cell, .x-grid-group-title, .x-grid-row-editor .x-form-field, .x-grid-row-editor .x-form-display-field, .x-form-invalid-under, .x-fieldset-header, .x-column-header, .x-mask-msg div, .x-btn-group-header-text-default-framed, table.x-datepicker-inner a, .x-monthpicker-item, .x-dd-drag-ghost           
+{           
+    font-size: 13px;           
+}
+
+.x-panel-header-text-default-framed
+{
+	font-size: 13px;
+}
+            
+.x-column-header            
+{           
+    text-shadow:0 0 0 rgba(255, 255, 255, 0.3);
+}
+	
+
+/* 修改表头行高 */
+
+ .x-column-header-inner {
+    line-height: 35px;
+} 
+
+
+.x-grid-with-row-lines .x-grid-cell-inner {
+    line-height: 23px;
+}
+
+
+/*记录选中后*/
+ .x-grid-row-selected .x-grid-cell, .x-grid-row-selected .x-grid-rowwrap-div
+ {
+     background-image:url(../image/treeIcon/nav_hover_bg.jpg) !important;
+     font-weight: bold;
+ }
+
+/*树、表格行间距*/
+.x-tree-elbow, .x-tree-elbow-end, .x-tree-elbow-plus, .x-tree-elbow-end-plus, .x-tree-elbow-empty, .x-tree-elbow-line {
+    height: 35px;
+    width: 16px;
+}
+
+/*表格标题文本*/
+.x-panel-header-text-default-framed {
+
+    font-family: "微软雅黑";
+    font-weight: bold;
+    line-height: 23px;
+}
+
+[class^="splashy-"], [class*=" splashy-"] {
+    margin-top: 4px;
+}
+
+.navbar .brand {
+	margin-left: 0px;
+}
+
+.x-toolbar{
+	background: #ebf2f6;
+}
+
+.x-border-box .x-field-default-toolbar .x-form-text, .x-border-box .x-field-default-toolbar .x-form-trigger {
+    height: 25px;
+}
+
+.x-trigger-cell x-unselectable{
+	
+}
