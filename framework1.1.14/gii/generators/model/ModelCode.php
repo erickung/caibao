@@ -7,7 +7,7 @@ class ModelCode extends CCodeModel
 	public $tableName;
 	public $modelClass;
 	public $modelPath='application.models';
-	public $baseClass='CMSActiveRecord';
+	public $baseClass='CActiveRecord';
 	public $buildRelations=true;
 	public $commentsAsLabels=false;
 

@@ -1,3 +1,6 @@
 /.buildpath
 /.project
 /.settings/org.eclipse.php.core.prefs
+web/assets/*
+libs/simplehtmldom_1_5/*
+

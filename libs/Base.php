@@ -1,4 +1,6 @@
 <?php
+namespace libs;
+
 class Base 
 {
 	private static $requires = array();
@@ -9,10 +11,10 @@ class Base
 		 
 		if (!isset(self::$requires[$file])) 
 		{
-			require $file;
 			self::$requires[$file] = 1;
+			return require $file;
 		}
-		
-		return true;
+	
+		return self::$requires[$file];
 	} 
 }

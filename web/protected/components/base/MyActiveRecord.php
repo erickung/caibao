@@ -11,7 +11,7 @@
 // 限公司事先书面同意，不允许向任何第三方透露，泄密部分或全部; 也不允许任何形式的私自备份.
 //////////////////////////////////////////////////////////////////////////////////////////
 
-class CMSActiveRecord extends CActiveRecord implements ActiveRecordInterface, ActiveRecordAppInterface 
+class MyActiveRecord extends CActiveRecord implements ActiveRecordInterface, ActiveRecordAppInterface 
 {
 	const MODIFY_TIME_FIELD = 'modify_time';
 	const MODIFY_USER_FIELD = 'modify_username';

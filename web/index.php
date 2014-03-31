@@ -12,27 +12,6 @@
 //////////////////////////////////////////////////////////////////////////////////////////
 @date_default_timezone_set('PRC');
 if (!defined('DS')) define('DS', DIRECTORY_SEPARATOR);
-if (!defined('POCKET_ROOT')) define('POCKET_ROOT', dirname(__FILE__) . DS . '..' . DS);
-define('CMS_ROOT', POCKET_ROOT . 'cms' . DS);
-if (!defined('RUNTIME_PATH')) define('RUNTIME_PATH', POCKET_ROOT . 'runtime' . DS);
+include dirname(__FILE__) . DS . '..' . DS . 'root.php';
 
-if(!defined('APP_ROOT')) define('APP_ROOT', dirname(__FILE__) . DS);
-define('APP_PROTECT', APP_ROOT . 'protected' . DS);
-define('APP_CONFIG', APP_PROTECT . 'config' . DS);
-
-if (file_exists(RUNTIME_PATH . 'runtime.php'))
-	require RUNTIME_PATH . 'runtime.php';
-else
-	require APP_CONFIG . 'runtime.php';
-
-// change the following paths if necessary
-$yii = dirname(__FILE__) . '/../framework' . FRAMEWORK_VERSION . '/yii.php';
-$config=dirname(__FILE__).'/protected/config/main.php';
-
-// remove the following lines when in production mode
-defined('YII_DEBUG') or define('YII_DEBUG',false);
-// specify how many levels of call stack should be shown in each log message
-defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
-
-require_once($yii);
-Yii::createWebApplication($config)->run();
+Root::run();

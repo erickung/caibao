@@ -50,7 +50,7 @@
 <?php endforeach; ?>
 <?php endif; ?>
  */
-class <?php echo $modelClass; ?> extends <?php echo 'CMSActiveRecord'."\n"; ?>
+class <?php echo $modelClass; ?> extends <?php echo 'CActiveRecord'."\n"; ?>
 {
 	/**
 	 * @return string the associated database table name

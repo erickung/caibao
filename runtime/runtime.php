@@ -3,6 +3,7 @@ define('FRAMEWORK_VERSION', '1.1.14');
 define('YII_DEBUG',true);
 define('YII_ENABLE_EXCEPTION_HANDLER',true);
 define('YII_ENABLE_ERROR_HANDLER',false);
+define('CACHE_PATH', RUNTIME_PATH . 'cache');
 
 class RunTime
 {
@@ -26,12 +27,12 @@ class RunTime
 	public static function getDBConf()
 	{
 		return array(
-			'connectionString' => 'mysql:host=127.0.0.1;dbname=pocket',
+			'connectionString' => 'mysql:host=127.0.0.1;dbname=caibao',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
-			//'charset' => 'latin1',
-			'tablePrefix' => 'cms_',
+			'charset' => 'utf8',
+			'tablePrefix' => 'caibao_',
 		);
 	}
 
